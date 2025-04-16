@@ -12,6 +12,7 @@ class Program
             Console.Clear();
             Console.WriteLine("===== Otimizador de PC =====");
             Console.WriteLine("1 - Limpar pastas TEMP");
+            Console.WriteLine("2 - Alterar Plano de Energia");
             Console.WriteLine("9 - Configurações");
             Console.WriteLine("0 - Sair");
             Console.Write("Escolha uma opção: ");
@@ -23,6 +24,9 @@ class Program
                 case "1":
                     LimparPastasTemp();
                     break;
+                case "2":
+                  //  MenuConfiguracoes();
+                    break;
                 case "9":
                     MenuConfiguracoes();
                     break;
@@ -32,12 +36,6 @@ class Program
                 default:
                     Console.WriteLine("Opção inválida.");
                     break;
-            }
-
-            if (executando)
-            {
-                Console.WriteLine("\nPressione qualquer tecla para voltar ao menu...");
-                Console.ReadKey();
             }
         }
     }
@@ -98,6 +96,14 @@ class Program
                 Console.WriteLine("Opção inválida.");
                 break;
         }
+    }
+
+    static void AlterarPlanoEnergia()
+    {
+        Console.Clear();
+        Console.WriteLine("===== Planos de Energia =====");
+        Console.WriteLine("Listando Planos de energia existentes");
+    
     }
 
     #endregion
